@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Redirecting to the professional portfolio of Syed Ahmed Mohi Uddin Hasan - Full-Stack Developer.">
+    <title>Redirecting...</title>
+    
+    <meta http-equiv="refresh" content="3; url=https://syed-ahmed.vercel.app/">
+    <link rel="canonical" href="https://syed-ahmed.vercel.app/">
+
+    <style>
+        :root {
+            --bg: #0a0a0a;
+            --text: #ffffff;
+            --accent: #3b82f6;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            background-color: var(--bg);
+            color: var(--text);
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            text-align: center;
+            overflow: hidden;
+        }
+        .container { padding: 20px; max-width: 500px; }
+        
+        /* Loader Animation */
+        .loader {
+            border: 3px solid #333;
+            border-top: 3px solid var(--accent);
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            animation: spin 0.8s linear infinite;
+            margin: 0 auto 20px;
+        }
+        @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+
+        h1 { font-size: 1.5rem; margin-bottom: 10px; font-weight: 500; }
+        p { color: #a3a3a3; font-size: 1rem; line-height: 1.6; }
+        a { color: var(--accent); text-decoration: none; border-bottom: 1px solid transparent; transition: 0.3s; }
+        a:hover { border-bottom: 1px solid var(--accent); }
+
+        /* RTL Logic */
+        [dir="rtl"] { font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; }
+        .lang-switch { margin-top: 30px; font-size: 0.85rem; color: #555; }
+
+        @media (max-width: 480px) {
+            h1 { font-size: 1.25rem; }
+            p { font-size: 0.9rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="loader"></div>
+        
+        <div lang="en">
+            <h1>Moving to a New Home</h1>
+            <p>I am redirecting you to my new professional portfolio at <br>
+               <a href="https://syed-ahmed.vercel.app/">syed-ahmed.vercel.app</a></p>
+        </div>
+
+        <hr style="margin: 20px auto; width: 30px; border: 0; border-top: 1px solid #333;">
+
+        <div lang="ar" dir="rtl">
+            <h1>نتقل إلى موقعنا الجديد</h1>
+            <p>يتم الآن توجيهك إلى ملفي الشخصي الجديد على الرابط <br>
+               <a href="https://syed-ahmed.vercel.app/">syed-ahmed.vercel.app</a></p>
+        </div>
+
+        <div class="lang-switch">
+            Redirecting in a few seconds... | سيتم تحويلك خلال ثوانٍ
+        </div>
+    </div>
+
+    <script>
+        // Fallback JavaScript redirect for faster performance
+        setTimeout(function() {
+            window.location.href = "https://syed-ahmed.vercel.app/";
+        }, 3000);
+    </script>
+</body>
+</html>
