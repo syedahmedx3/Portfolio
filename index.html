@@ -1,197 +1,271 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Redirecting to the professional portfolio of Syed Ahmed Mohi Uddin Hasan - Full-Stack Developer.">
-    <title>Redirecting...</title>
-    
-    <meta http-equiv="refresh" content="3; url=https://syedahmed.vercel.app/">
-    <link rel="canonical" href="https://syedahmed.vercel.app/">
+<meta charset="utf-8">
+<meta http-equiv="x-ua-compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="description" content="Redirecting to the official portfolio of Syed Ahmed Mohi Uddin Hasan, Full-Stack Developer. This legacy page preserves SEO continuity while securely forwarding visitors to the new Vercel-hosted portfolio.">
+<meta name="robots" content="index,follow">
+<meta name="theme-color" content="#09090b">
+<meta name="color-scheme" content="dark">
+<meta name="referrer" content="strict-origin-when-cross-origin">
 
-    <style>
-        :root {
-            --bg: #0a0a0a;
-            --text-main: #ffffff;
-            --text-muted: #a3a3a3;
-            --accent: #3b82f6;
-            --accent-glow: rgba(59, 130, 246, 0.15);
-            --border-color: #262626;
-            --card-bg: rgba(18, 18, 18, 0.6);
-        }
+<title>Redirecting • Syed Ahmed Mohi Uddin Hasan</title>
 
-        * { 
-            margin: 0; 
-            padding: 0; 
-            box-sizing: border-box; 
-        }
+<link rel="canonical" href="https://syedahmed.vercel.app/">
+<link rel="dns-prefetch" href="//syedahmed.vercel.app">
+<link rel="preconnect" href="https://syedahmed.vercel.app" crossorigin>
 
-        body {
-            background-color: var(--bg);
-            color: var(--text-main);
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            min-height: 100vh;
-            min-height: -webkit-fill-available;
-            text-align: center;
-            overflow-x: hidden;
-            padding: 1rem;
-        }
+<meta http-equiv="refresh" content="3;url=https://syedahmed.vercel.app/">
 
-        /* Adaptive Glassmorphic Container */
-        .container { 
-            position: relative;
-            padding: 2.5rem 2rem; 
-            width: 100%;
-            max-width: 540px; 
-            background: var(--card-bg);
-            border: 1px solid var(--border-color);
-            border-radius: 16px;
-            backdrop-filter: blur(12px);
-            -webkit-backdrop-filter: blur(12px);
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
+<style>
+:root{
+    color-scheme:dark;
 
-        .container:hover {
-            box-shadow: 0 25px 50px var(--accent-glow);
-            transform: translateY(-2px);
-        }
-        
-        /* High-Performance Smooth Loader */
-        .loader {
-            border: 3px solid #1f1f1f;
-            border-top: 3px solid var(--accent);
-            border-radius: 50%;
-            width: 44px;
-            height: 44px;
-            animation: spin 0.7s cubic-bezier(0.4, 0, 0.2, 1) infinite;
-            margin: 0 auto 1.75rem;
-        }
-        @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+    --bg:#09090b;
+    --surface:rgba(18,18,20,.72);
+    --border:#2a2a2d;
 
-        /* Fluid Typography & Layout Hierarchy */
-        h1 { 
-            font-size: clamp(1.35rem, 4vw, 1.75rem); 
-            margin-bottom: 0.75rem; 
-            font-weight: 600; 
-            letter-spacing: -0.025em;
-        }
+    --text:#fafafa;
+    --muted:#d4d4d8;
+    --subtle:#a1a1aa;
 
-        p { 
-            color: var(--text-muted); 
-            font-size: clamp(0.95rem, 2.5vw, 1.05rem); 
-            line-height: 1.6; 
-        }
+    --accent:#60a5fa;
+    --accent-soft:rgba(96,165,250,.18);
 
-        .link-wrapper {
-            margin-top: 0.5rem;
-        }
+    --radius:1.2rem;
+    --shadow:0 24px 60px rgba(0,0,0,.45);
 
-        a { 
-            color: var(--accent); 
-            text-decoration: none; 
-            font-weight: 500;
-            display: inline-block;
-            position: relative;
-            padding-bottom: 2px;
-        }
+    --space:clamp(1.25rem,3vw,2.5rem);
+    --gap:clamp(1rem,2vw,1.5rem);
 
-        /* Premium Underline Hover Transition */
-        a::after {
-            content: '';
-            position: absolute;
-            width: 100%;
-            transform: scaleX(0);
-            height: 1px;
-            bottom: 0;
-            left: 0;
-            background-color: var(--accent);
-            transform-origin: bottom right;
-            transition: transform 0.25s ease-out;
-        }
-        a:hover::after {
-            transform: scaleX(1);
-            transform-origin: bottom left;
-        }
+    --container:min(92vw,38rem);
+}
 
-        .divider {
-            margin: 2rem auto; 
-            width: 40px; 
-            border: 0; 
-            border-top: 1px solid var(--border-color);
-        }
+*,
+*::before,
+*::after{
+    box-sizing:border-box;
+}
 
-        /* Optimized Right-to-Left (RTL) Layout Styling */
-        [dir="rtl"] { 
-            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; 
-        }
-        [dir="rtl"] h1 {
-            font-weight: 500;
-        }
+html{
+    height:100%;
+    -webkit-text-size-adjust:100%;
+    text-size-adjust:100%;
+}
 
-        .lang-switch { 
-            margin-top: 2.5rem; 
-            font-size: 0.85rem; 
-            color: #525252;
-            letter-spacing: 0.025em;
-        }
+body{
+    margin:0;
+    min-height:100vh;
+    min-height:100dvh;
 
-        /* Multi-Tier Adaptive Media Queries */
-        @media (max-width: 640px) {
-            body { padding: 1.5rem; }
-            .container { padding: 2rem 1.5rem; border-radius: 12px; }
-            .divider { margin: 1.75rem auto; }
-            .lang-switch { margin-top: 2rem; }
-        }
+    display:flex;
+    justify-content:center;
+    align-items:center;
 
-        @media (max-width: 380px) {
-            .container { padding: 1.75rem 1.2rem; }
-            .loader { width: 38px; height: 38px; margin-bottom: 1.25rem; }
-            .divider { margin: 1.5rem auto; }
-        }
+    padding:clamp(.9rem,3vw,2rem);
 
-        /* Ultra-wide Screen Adaptations */
-        @media (min-width: 1920px) {
-            .container { max-width: 600px; padding: 3rem 2.5rem; }
-        }
-    </style>
+    overflow:hidden;
+
+    background:
+        radial-gradient(circle at top,#16213a 0%,transparent 42%),
+        radial-gradient(circle at bottom,#10131b 0%,transparent 40%),
+        var(--bg);
+
+    color:var(--text);
+
+    font-family:
+        Inter,
+        system-ui,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Roboto,
+        Helvetica,
+        Arial,
+        sans-serif;
+
+    line-height:1.6;
+
+    text-rendering:optimizeLegibility;
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
+}
+
+main{
+    width:100%;
+    max-width:var(--container);
+}
+
+.card{
+    background:var(--surface);
+    border:1px solid var(--border);
+    border-radius:var(--radius);
+
+    padding:var(--space);
+
+    text-align:center;
+
+    backdrop-filter:blur(14px);
+    -webkit-backdrop-filter:blur(14px);
+
+    box-shadow:var(--shadow);
+}
+
+.loader{
+    inline-size:3rem;
+    block-size:3rem;
+
+    margin-inline:auto;
+    margin-block-end:1.5rem;
+
+    border:.22rem solid #242427;
+    border-top-color:var(--accent);
+    border-radius:50%;
+
+    will-change:transform;
+
+    animation:spin .72s linear infinite;
+}
+
+@keyframes spin{
+    to{
+        transform:rotate(360deg);
+    }
+}
+
+section{
+    display:grid;
+    gap:.55rem;
+}
+
+h1{
+    margin:0;
+    font-size:clamp(1.45rem,2vw + 1rem,2rem);
+    line-height:1.2;
+    font-weight:700;
+    letter-spacing:-.02em;
+}
+
+p{
+    margin:0;
+    color:var(--muted);
+    font-size:clamp(.98rem,.4vw + .9rem,1.08rem);
+}
+
+a{
+    display:inline-flex;
+    align-self:center;
+    justify-self:center;
+
+    margin-top:.35rem;
+
+    color:var(--accent);
+
+    text-decoration:none;
+    font-weight:600;
+
+    overflow-wrap:anywhere;
+}
+
+a:focus-visible{
+    outline:.18rem solid var(--accent);
+    outline-offset:.25rem;
+    border-radius:.3rem;
+}
+
+a::after{
+    content:"";
+    display:block;
+    position:absolute;
+}
+
+.separator{
+    margin-block:1.9rem;
+    border:0;
+    border-top:1px solid var(--border);
+}
+
+[lang="ar"]{
+    direction:rtl;
+    font-family:
+        "Segoe UI",
+        Tahoma,
+        Arial,
+        sans-serif;
+}
+
+[lang="ar"] h1{
+    font-weight:700;
+}
+
+footer{
+    margin-top:1.8rem;
+
+    color:var(--subtle);
+
+    font-size:clamp(.82rem,.25vw + .78rem,.92rem);
+}
+
+@media (prefers-reduced-motion:reduce){
+
+    .loader{
+        animation:none;
+    }
+
+    *{
+        scroll-behavior:auto;
+    }
+
+}
+
+@supports not (min-height:100dvh){
+    body{
+        min-height:100vh;
+    }
+}
+</style>
 </head>
+
 <body>
 
-    <div class="container">
-        <div class="loader"></div>
-        
-        <div lang="en">
-            <h1>Moving to a New Home</h1>
-            <p>I am redirecting you to my new professional portfolio at</p>
-            <div class="link-wrapper">
-                <a href="https://syedahmed.vercel.app">syedahmed.vercel.app</a>
-            </div>
-        </div>
+<main>
+<article class="card" aria-labelledby="title-en">
 
-        <hr class="divider">
+<div class="loader" aria-hidden="true"></div>
 
-        <div lang="ar" dir="rtl">
-            <h1>ننتقل إلى موقعنا الجديد</h1>
-            <p>يتم الآن توجيهك إلى ملفي الشخصي الجديد على الرابط</p>
-            <div class="link-wrapper">
-                <a href="https://syedahmed.vercel.app">syedahmed.vercel.app</a>
-            </div>
-        </div>
+<section lang="en" aria-label="English">
+<h1 id="title-en">Moving to My New Portfolio</h1>
+<p>You are being securely redirected to my latest professional portfolio.</p>
+<a href="https://syedahmed.vercel.app/" rel="noopener">syedahmed.vercel.app</a>
+</section>
 
-        <div class="lang-switch">
-            Redirecting in a few seconds... | سيتم تحويلك خلال ثوانٍ
-        </div>
-    </div>
+<hr class="separator" aria-hidden="true">
 
-    <script>
-        // High-performance instant client-side fallback redirect
-        setTimeout(function() {
-            window.location.href = "https://syedahmed.vercel.app";
-        }, 3000);
-    </script>
+<section lang="ar" dir="rtl" aria-label="العربية">
+<h1>الانتقال إلى موقعي الجديد</h1>
+<p>يتم الآن تحويلك إلى أحدث نسخة من ملفي المهني.</p>
+<a href="https://syedahmed.vercel.app/" rel="noopener">syedahmed.vercel.app</a>
+</section>
+
+<footer>
+Redirecting in a few seconds • سيتم تحويلك خلال بضع ثوانٍ
+</footer>
+
+</article>
+</main>
+
+<script>
+(() => {
+    "use strict";
+    const target = "https://syedahmed.vercel.app/";
+    setTimeout(() => {
+        if (location.href !== target) {
+            location.replace(target);
+        }
+    }, 3000);
+})();
+</script>
+
 </body>
 </html>
